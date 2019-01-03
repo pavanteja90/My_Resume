@@ -26,7 +26,7 @@ export class AppComponent implements OnInit{
     else{
       $("#a1").addClass("current-tab active");
     }
-    var prevScrollpos = window.pageYOffset;
+    // var prevScrollpos = window.pageYOffset;
     $("#background").scroll(() => {
       if (document.getElementById("background").scrollTop > 60) {
         document.getElementById("scrollBtn").style.display = "block";
@@ -40,17 +40,17 @@ export class AppComponent implements OnInit{
       } else {
         document.getElementById("scrollBtn").style.display = "none";
       }
-      var currentScrollPos = window.pageYOffset;
-      if(localStorage.getItem("id") != "5"){
-        if (prevScrollpos > currentScrollPos) {
-          $("#app-footer").fadeIn("slow");
-          $("#app-navbar").fadeIn("slow");
-        } else {
-          $("#app-footer").fadeOut("slow");
-          $("#app-navbar").fadeOut("slow");
-        }
-      }
-      prevScrollpos = currentScrollPos;
+      // var currentScrollPos = window.pageYOffset;
+      // if(localStorage.getItem("id") != "5"){
+      //   if (prevScrollpos > currentScrollPos) {
+      //     $("#app-footer").fadeIn("slow");
+      //     $("#app-navbar").fadeIn("slow");
+      //   } else {
+      //     $("#app-footer").fadeOut("slow");
+      //     $("#app-navbar").fadeOut("slow");
+      //   }
+      // }
+      // prevScrollpos = currentScrollPos;
     });
   }
 
