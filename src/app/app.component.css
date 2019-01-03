@@ -1,0 +1,605 @@
+.current-tab{
+    border-bottom: 2px solid #666;
+}
+.navbar{
+    background-color: #aaa !important;
+    height: 60px;
+}
+
+#app-navbar-name{
+    height: 15vh !important;
+}
+.navbar-nav>.nav-item:hover{
+    transform: scale(1.1);
+    transition-duration: 150ms;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+}
+.nav-item{
+    padding: 0em 1em;
+    text-align: center;
+}
+.footer {
+    position: fixed;
+    left: 3%;
+    bottom: 0;
+    width: 94%;
+    background-color: #ccc;
+    color: black;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+}
+.nav-item:hover>.nav-link>.fa.fa-book, .nav-item:hover>.nav-link>.fa.fa-user-circle-o, .nav-item:hover>.nav-link>.fa.fa-gamepad, .nav-item:hover>.nav-link>.fa.fa-at {  
+    transform: rotate(360deg);
+}
+.fa.fa-book, .fa.fa-user-circle-o, .fa.fa-gamepad, .fa.fa-at {
+    transition: transform 1s ease 0s;
+}
+#background { 
+    /* background: url('../assets/images/doodle.jpg') no-repeat center center fixed; 
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+    overflow-x: hidden;
+}
+.parallax-1{
+    /* The image used */
+  background-image: url('../assets/images/aboutme.gif');
+
+  /* Full height */
+  height: 65%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax-2{
+    /* The image used */
+  background-image: url('../assets/images/education.gif');
+
+  /* Full height */
+  height: 65%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax-3{
+    /* The image used */
+  background-image: url('../assets/images/soccer.gif');
+
+  /* Full height */
+  height: 65%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax-4{
+    /* The image used */
+  background-image: url('../assets/images/socialmedia.gif');
+
+  /* Full height */
+  height: 65%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+#social-links>a:hover {
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+}
+
+.text1 {
+    background-color: white;
+    color: black;
+    font-size: 10vw; /* Responsive font size */
+    font-weight: bold;
+    margin: 0 auto; /* Center the text container */
+    padding: 10px;
+    width: 50%;
+    text-align: center; /* Center text */
+    position: absolute; /* Position text */
+    top: 50%; /* Position text in the middle */
+    left: 50%; /* Position text in the middle */
+    transform: translate(-50%, -50%); /* Position text in the middle */
+    mix-blend-mode: screen; /* This makes the cutout text possible */
+}
+
+.text2 {
+    background-color: white;
+    color: black;
+    font-size: 10vw; /* Responsive font size */
+    font-weight: bold;
+    margin: 0 auto; /* Center the text container */
+    padding: 10px;
+    width: 50%;
+    text-align: center; /* Center text */
+    position: absolute; /* Position text */
+    top: 50%; /* Position text in the middle */
+    left: 50%; /* Position text in the middle */
+    transform: translate(-50%, -50%); /* Position text in the middle */
+    mix-blend-mode: screen; /* This makes the cutout text possible */
+}
+
+.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+.menu-btn {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: 2px solid gray;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.menu-btn:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transition-duration: 0.8s;
+}
+
+
+ /* Buttons Animation CSS Start 
+ Follow this link for descriptions
+ https://codepen.io/davekilljoy/pen/wHAvb*/
+
+.btn-animate {
+    position: relative;
+    display:block;
+    height: 8vh;
+    width: 40vw;
+    margin: 1vh 30vw;
+    padding: 0.3% 0.4%;
+    font-weight: 700;
+    font-size: 2vw;
+    letter-spacing: 2px;
+    color: #666;
+    border: 2px #666 solid;
+    border-radius: 4px;
+    text-transform: uppercase;
+    outline: 0;
+    overflow:hidden;
+    background: none;
+    z-index: 1;
+    cursor: pointer;
+    transition:         0.08s ease-in;
+    -o-transition:      0.08s ease-in;
+    -ms-transition:     0.08s ease-in;
+    -moz-transition:    0.08s ease-in;
+    -webkit-transition: 0.08s ease-in;
+  }
+  
+  .fill:hover {
+    color: whitesmoke;
+  }
+  
+  .fill:before {
+    content: "";
+    position: absolute;
+    background: #666;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    transition: top 0.09s ease-in;
+    -webkit-transition: top 0.09s ease-in;
+  }
+  
+  .fill:hover:before {
+    top: 0;
+  }
+  
+  .fade:before{
+    content:"→";
+    position:absolute;
+    color:#666;
+    left: 88%;
+    opacity: 0;
+    transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+  }
+  
+  .fade:hover:before{
+    left:91%;
+    opacity:1;
+  }
+  
+  .fade:hover {
+    border: 0px #fff solid;
+    transform: scale(1.04, 1.04);
+    -webkit-transform: scale(1.04,1.04);
+    transition: border 0.3s ease-out;
+    -webkit-transition: border 0.3s ease-out;
+    transition: transform 250ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+    -webkit-transition: transform 250ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+  }
+  
+  .arrow{
+    text-align:left;
+    padding-left:17px;
+  }
+  
+  .arrow:before{
+    content:"→";
+    position:absolute;
+    color:#666;
+    left: 83%;
+    opacity: 0;
+    transition:  all 250ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+    -webkit-transition: all 250ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+  }
+  
+  .arrow:hover:before{
+    left:84%;
+    opacity:1;
+  }
+  
+  .arrow:hover {
+    width:170px;
+  }
+  
+  
+  .svg{
+      transition:  all 150ms cubic-bezier(0.445, 0.050, 0.550, 0.950); 
+    -webkit-transition: all 150ms cubic-bezier(0.445, 0.050, 0.550, 0.950); 
+  }
+  
+  .svg:before{
+    position:absolute;  
+    content:"";
+    background: url(https://f.cl.ly/items/3H3A0D1N281a2T280F3o/heist.svg) no-repeat center center;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:-1;
+    opacity:0;
+    transition:  all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+    -webkit-transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+  }
+  
+  .svg:after {
+    content: "";
+    position: absolute;
+    background: #d19b26;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -2;
+    transition:  all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000); 
+    -webkit-transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000); 
+  }
+  .svg:hover{
+    color:white;
+    border: 0px #d19b26 solid;
+  }
+  .svg:hover:before {
+    opacity: .8;
+  }
+  .svg:hover:after {
+    top: 0;
+  }
+
+  .about-btn:after{
+    content:"About Me";
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    text-align:center;
+    transition:  all 400ms cubic-bezier(0.680, -0.550, 0.265, 1.550); ;
+    -webkit-transition: all 400ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+  }
+  
+  .about-btn:before {
+    content:"Read it →";
+    height:100%;
+    width:100%;
+    position:absolute;
+    color:#aaa;
+    left:-100%;
+    opacity: 0;
+    transition:  all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+    -webkit-transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+  }
+  
+  .about-btn:hover{
+    background:#666;
+  }
+  
+  .about-btn:hover:before{
+    left:0;
+    opacity:1;
+    color:#fff;
+  }
+  .about-btn:hover:after{
+    left:100%;
+    opacity:0;
+  }
+  
+  .about-btn.left:hover{
+    background:none;
+  }
+  
+  .about-btn.left:before {
+    left:100%;
+    color:#666;
+    transition:  all 425ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+    -webkit-transition: all 425ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+  }
+  
+  .about-btn.left:hover:before{
+    left:0;
+  }
+  .education-btn:after{
+    content:"Education";
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    text-align:center;
+    transition:  all 400ms cubic-bezier(0.680, -0.550, 0.265, 1.550); ;
+    -webkit-transition: all 400ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+  }
+  
+  .education-btn:before {
+    content:"Read it →";
+    height:100%;
+    width:100%;
+    position:absolute;
+    color:#666;
+    left:-100%;
+    opacity: 0;
+    transition:  all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+    -webkit-transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+  }
+  
+  .education-btn:hover{
+    background:#666;
+  }
+  
+  .education-btn:hover:before{
+    left:0;
+    opacity:1;
+    color:#fff;
+  }
+  .education-btn:hover:after{
+    left:100%;
+    opacity:0;
+  }
+  
+  .education-btn.left:hover{
+    background:none;
+  }
+  
+  .education-btn.left:before {
+    left:100%;
+    color:#666;
+    transition:  all 425ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+    -webkit-transition: all 425ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+  }
+  
+  .education-btn.left:hover:before{
+    left:0;
+  }
+  
+  .chill-btn:after{
+    content:"Chill Outs";
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    text-align:center;
+    transition:  all 400ms cubic-bezier(0.680, -0.550, 0.265, 1.550); ;
+    -webkit-transition: all 400ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+  }
+  
+  .chill-btn:before {
+    content:"Read it →";
+    height:100%;
+    width:100%;
+    position:absolute;
+    color:#666;
+    left:-100%;
+    opacity: 0;
+    transition:  all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+    -webkit-transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+  }
+  
+  .chill-btn:hover{
+    background:#666;
+  }
+  
+  .chill-btn:hover:before{
+    left:0;
+    opacity:1;
+    color:#fff;
+  }
+  .chill-btn:hover:after{
+    left:100%;
+    opacity:0;
+  }
+  
+  .chill-btn.left:hover{
+    background:none;
+  }
+  
+  .chill-btn.left:before {
+    left:100%;
+    color:#666;
+    transition:  all 425ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+    -webkit-transition: all 425ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+  }
+  
+  .chill-btn.left:hover:before{
+    left:0;
+  }
+  
+  .social-btn:after{
+    content:"Social Presence";
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    text-align:center;
+    transition:  all 400ms cubic-bezier(0.680, -0.550, 0.265, 1.550); ;
+    -webkit-transition: all 400ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+  }
+  
+  .social-btn:before {
+    content:"Read it →";
+    height:100%;
+    width:100%;
+    position:absolute;
+    color:#666;
+    left:-100%;
+    opacity: 0;
+    transition:  all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+    -webkit-transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+  }
+  
+  .social-btn:hover{
+    background:#666;
+  }
+  
+  .social-btn:hover:before{
+    left:0;
+    opacity:1;
+    color:#fff;
+  }
+  .social-btn:hover:after{
+    left:100%;
+    opacity:0;
+  }
+  
+  .social-btn.left:hover{
+    background:none;
+  }
+  
+  .social-btn.left:before {
+    left:100%;
+    color:#666;
+    transition:  all 425ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+    -webkit-transition: all 425ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+  }
+  
+  .social-btn.left:hover:before{
+    left:0;
+  }
+  
+  
+  /* Buttons Animation CSS End */
+
+  #my-name {
+    color: black;
+    font-size: 8vh;
+    margin: 0px 0 0 0px;
+    padding-left: 0%;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 20em;
+    animation: type 4s steps(1000, end); 
+  }
+  @keyframes type{ 
+    from { width: 0; } 
+  }
+
+
+  
+
+  .shaking-div:hover>i {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+#myBtn {
+  display: block;
+  position: fixed;
+  bottom: 3vh;
+  right: 3vw;
+  z-index: 99;
+  font-size: 2vh;
+  border: 2px solid #111;
+  outline: none;
+  opacity: 0.8;
+  color: #111;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 40%;
+}
+
+#myBtn:hover {
+  transform: scale(1.05)
+}
+
+#scrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 3vh;
+  right: 48vw;
+  left: 48vw;
+  z-index: 99;
+  font-size: 2vh;
+  border: none;
+  outline: none;
+  background: transparent;
+  opacity: 0.8;
+  color: #111;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+#scrollBtn:hover {
+  transform: translateY(-1vh);
+  transition-duration: 500ms;
+}

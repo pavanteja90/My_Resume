@@ -1,0 +1,64 @@
+.btn-link:hover {
+    cursor: pointer;
+}
+.dropdown-header {
+    background-color: aliceblue;
+    border: 1px solid #777;
+    border-radius: 5px;
+}
+.dropdown-body {
+    background-color: azure;
+    border-radius: 0px 0px 10px 10px;
+    padding: 2%;
+    margin-left: 1%;
+    max-width: 98%;
+    align-content: center;
+    align-items: center;
+}
+.dropdown-body>img {
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    display: block;
+}
+
+.tech-skill-set, .survival-skill-set {
+    margin: 2% 4%;
+}
+
+.progress {
+    background-color: #ccc;
+}
+
+.active {
+    animation: progress-bar-stripes 2s linear infinite;
+}
+
+.beginner {
+    background-color: #e5004f !important;
+}
+
+.intermediate {
+    background-color: #007bff !important;
+}
+
+.advanced {
+    background-color: #fcc800 !important;
+}
+
+.expert {
+    background-color: #22ac38 !important;
+}
+
+@media (max-width: 700px) {
+    .dropdown-header {
+        text-align: center;
+        font-size: 1px;
+        white-space: nowrap;
+        overflow: scroll;
+        text-overflow: ellipsis;
+        -ms-text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        word-wrap: break-word;
+    }
+}

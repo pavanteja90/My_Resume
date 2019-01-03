@@ -1,0 +1,126 @@
+<a id="myBtn" class="popover-dismiss" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-html="true" title="Contact" data-content="<div><span><b>Phone:</b> (+61) 434 266 986</span><br><span><b>Email:</b>pavanteja.bhatta@gmail.com</span></div>"><i title="Contact" class="fa fa-comments fa-2x" aria-hidden="true"></i></a>
+<button style="width: fit-content; height: fit-content" (click)="topFunction()" id="scrollBtn"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></button>
+<nav id="app-navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <a class="navbar-brand" href="#" (click)="navigate(5)"><i class="fa fa-home"></i>&nbsp;<span style="font-family: URW Chancery L, cursive">Pavan Teja</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+    aria-expanded="false" aria-label="Toggle navigation" (click)="navbarBtnClicked()">
+    <span class="navbar-toggler-icon" ></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul id="list-items" class="navbar-nav mr-auto">
+      <li class="nav-item" id="a1">
+        <a class="nav-link" routerLink="about-me" (click)="navigate(1)">
+          <i class="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp;<span style="font-family: URW Chancery L, cursive">About Me</span>
+        </a>
+      </li>
+      <li class="nav-item" id="a2">
+        <a class="nav-link" routerLink="education" (click)="navigate(2)">
+          <i class="fa fa-book" aria-hidden="true"></i>&nbsp;<span style="font-family: URW Chancery L, cursive">Education</span>
+        </a>
+      </li>
+      <li class="nav-item" id="a3">
+        <a class="nav-link" routerLink="chill-outs" (click)="navigate(3)">
+            <i class="fa fa-gamepad" aria-hidden="true"></i>&nbsp;<span style="font-family: URW Chancery L, cursive">Chill Outs</span>
+          </a>
+      </li>
+      <li class="nav-item" id="a4">
+        <a class="nav-link" routerLink="social-presence" (click)="navigate(4)">
+            <i class="fa fa-at" aria-hidden="true"></i>&nbsp;<span style="font-family: URW Chancery L, cursive">Social Presence</span>
+          </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div id="background" style="height: 100vh">
+  <div class="row" id="app-navbar-name" style="height: inherit; background-color: white; background-image: url('../assets/images/ribbon.png'); background-repeat: no-repeat; margin: 0px">
+    <div class="col-md-8 col-lg-8 col-xl-8"><a class="navbar-brand" href="#" (click)="navigate(5)"><p id="my-name" style="font-family: Impact, fantasy">Pavan Teja</p></a></div>
+    <div id = "social-links" class="col-md-4 col-lg-4 col-xl-4" style="height: inherit; text-align: center">
+      <a class="fa fa-facebook-square fa-2x" title="Facebook" href="https://www.facebook.com/pavanteja90/" target="_blank" aria-hidden="true" style="color: #3f729b; padding: 34px 5px 34px 5px; cursor: pointer;"></a>
+      <a class="fa fa-instagram fa-2x" title="Instagram" href="https://www.instagram.com/pavanteja90/" target="_blank" aria-hidden="true" style="color: #dd2a7b; padding: 34px 5px 34px 5px; cursor: pointer;"></a>
+      <a class="fa fa-skype fa-2x" title="Skype" href="https://join.skype.com/invite/gz246F7XF8oz/" target="_blank" aria-hidden="true" style="color: #00aff0; padding: 34px 5px 34px 5px; cursor: pointer;"></a>
+      <a class="fa fa-github fa-2x" title="GitHub" href="https://github.com/pavanteja90" target="_blank" aria-hidden="true" style="color: #222; padding: 34px 5px 34px 5px; cursor: pointer;"></a>
+      <a class="fa fa-linkedin-square fa-2x" title="LinkedIn" href="https://www.linkedin.com/in/pavan-teja-67216049/" target="_blank" aria-hidden="true" style="color: #0077B5; padding: 34px 5px 34px 5px; cursor: pointer;"></a>
+      <a class="fa fa-envelope fa-2x" title="Email" href="mailto:pavanteja.bhatta@gmail.com" aria-hidden="true" style="color: #888; padding: 34px 5px 34px 5px; cursor: pointer;"></a>
+    </div>
+  </div>
+
+  <div class="parallax-1">
+  </div>
+  <div class="shaking-div" style="height:40vh; background-color:#f39860; text-align: center; align-items: center">
+    <br>
+    <p style="font-family: Bradley Hand, cursive; color: white; font-size:3vh;">Want to know what I'm made of?</p>
+    <button class="btn-animate about-btn" (click)="navigateTo(1)" style="font-family: Bradley Hand, cursive; color: white; font-size:1em;">&nbsp;</button>
+    <i class="fa fa-user-circle-o fa-4x" aria-hidden="true"></i>
+  </div>
+  <div class="parallax-2">
+  </div>
+  <div class="shaking-div" style="height:40vh; background-color:#8fc38e; text-align: center">
+    <br>
+    <p style="font-family: Bradley Hand, cursive; color: white; font-size:3vh;">My CPU is powered by..</p>
+    <button class="btn-animate education-btn" (click)="navigateTo(2)" style="font-family: Bradley Hand, cursive; color: white; font-size:1em;">&nbsp;</button>
+    <i class="fa fa-book fa-4x" aria-hidden="true"></i>
+  </div>
+  <div class="parallax-3">
+  </div>
+  <div class="shaking-div" style="height:40vh; background-color:#e4607f; text-align: center">
+    <br>
+    <p style="font-family: Bradley Hand, cursive; color: white; font-size:3vh;">When I'm free, Hmm?</p>
+    <button class="btn-animate chill-btn" (click)="navigateTo(3)" style="font-family: Bradley Hand, cursive; color: white; font-size:1em;">&nbsp;</button>
+    <i class="fa fa-gamepad fa-4x" aria-hidden="true"></i>
+  </div>
+  <div class="parallax-4">
+  </div>
+  <div class="shaking-div" style="height:40vh; background-color:#5596e6; text-align: center">
+    <br>
+    <p style="font-family: Bradley Hand, cursive; color: white; font-size:3vh;">Like me? See where I'm available.</p>
+    <button class="btn-animate social-btn" (click)="navigateTo(4)" style="font-family: Bradley Hand, cursive; color: white; font-size:1em; width: 50vw; margin: 1vh 25vw;">&nbsp;</button>
+    <i class="fa fa-at fa-4x" aria-hidden="true"></i>
+  </div>
+  <div style="height:20vh; background-color:#333; text-align: center; color: white">
+    <div style="align-content: center; align-items: center; text-align: center; padding-top: 20px">
+      <a class="fa fa-linkedin-square" title="LinkedIn" href="https://www.linkedin.com/in/pavan-teja-67216049/" target="_blank" aria-hidden="true" style="color: white; padding: 0px 5px; cursor: pointer;"></a>
+      <a class="fa fa-facebook-square" title="Facebook" href="https://www.facebook.com/pavanteja90/" target="_blank" aria-hidden="true" style="color: white; padding: 0px 5px; cursor: pointer;"></a>
+      <a class="fa fa-instagram" title="Instagram" href="https://www.instagram.com/pavanteja90/" target="_blank" aria-hidden="true" style="color: white; padding: 0px 5px; cursor: pointer;"></a>
+      <a class="fa fa-skype" title="Skype" href="https://join.skype.com/invite/gz246F7XF8oz/" target="_blank" aria-hidden="true" style="color: white; padding: 0px 5px; cursor: pointer;"></a>
+      <a class="fa fa-github" title="GitHub" href="https://github.com/pavanteja90" target="_blank" aria-hidden="true" style="color: white; padding: 0px 5px; cursor: pointer;"></a>
+      <br>
+      <span style="font-family: Courier, monospace">PAVAN TEJA | PAVANTEJA.BHATTA@GMAIL.COM</span>
+      <br>
+      <span style="padding-top: 20px; font-size: 0.5em">Portfolio Version: 1.0</span>
+    </div>
+  </div>
+
+</div>
+
+<router-outlet id="router-outlet"></router-outlet>
+<!-- <footer id="app-footer" class="footer">
+  <div class="container">
+    <br/>
+    <span>This is the footer</span>
+    <br/>
+  </div>
+</footer> -->
+
+<!-- 
+<div id="background" style="height: 100vh">
+    <div class="row" id="app-navbar-name" style="height: 20vh !important; background-color: white; background-repeat: no-repeat; margin: 0px">
+      <div class="col-md-6 col-lg-6 col-xl-6">
+        <span id="my-name" style="font-family: Impact; font-size: 6em; padding-left: 28vw">Hello. |</span>
+      </div>
+      <div class="col-md-6 col-lg-6 col-xl-6" style="padding-top: 7vh">
+        <span>I'm Pavan.</span><br>
+        <span>I love programming &</span><br>
+        <span>leading life to the fullest</span>
+      </div>
+    </div>
+    <div class="row" style="height: 15vh !important; background-color: white; background-repeat: no-repeat; margin: 0px">
+      <div id = "social-links" class="col-md-12 col-lg-12 col-xl-12" style="height: inherit; text-align: center">
+        <a class="fa fa-facebook-square fa-2x" title="Facebook" href="https://www.facebook.com/pavanteja90/" target="_blank" aria-hidden="true" style="color: #3f729b; padding: 34px 5px 34px 5px; cursor: pointer;"></a>
+        <a class="fa fa-instagram fa-2x" title="Instagram" href="https://www.instagram.com/pavanteja90/" target="_blank" aria-hidden="true" style="color: #dd2a7b; padding: 34px 5px 34px 5px; cursor: pointer;"></a>
+        <a class="fa fa-skype fa-2x" title="Skype" href="https://join.skype.com/invite/gz246F7XF8oz/" target="_blank" aria-hidden="true" style="color: #00aff0; padding: 34px 5px 34px 5px; cursor: pointer;"></a>
+        <a class="fa fa-github fa-2x" title="GitHub" href="https://github.com/pavanteja90" target="_blank" aria-hidden="true" style="color: #222; padding: 34px 5px 34px 5px; cursor: pointer;"></a>
+        <a class="fa fa-linkedin-square fa-2x" title="LinkedIn" href="https://www.linkedin.com/in/pavan-teja-67216049/" target="_blank" aria-hidden="true" style="color: #0077B5; padding: 34px 5px 34px 5px; cursor: pointer;"></a>
+        <a class="fa fa-envelope fa-2x" title="Email" href="mailto:pavanteja.bhatta@gmail.com" aria-hidden="true" style="color: #888; padding: 34px 5px 34px 5px; cursor: pointer;"></a>
+      </div>
+    </div> -->

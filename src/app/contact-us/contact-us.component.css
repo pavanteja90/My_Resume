@@ -1,0 +1,13 @@
+.social-card:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transition-duration: 500ms;
+}
+.social-card {
+    padding: 2.5vh 2.5vw;
+}
+.btn:hover {
+    cursor: pointer;
+}
