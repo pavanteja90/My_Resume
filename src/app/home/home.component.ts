@@ -2,6 +2,7 @@
 // This is the about me component
 
 import { Component, OnInit } from '@angular/core';
+declare var $: any;
 
 @Component({
   selector: 'app-home',
@@ -14,5 +15,4 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }
