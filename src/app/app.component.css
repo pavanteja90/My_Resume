@@ -2,8 +2,13 @@
     border-bottom: 2px solid #666;
 }
 .navbar{
-    background-color: #aaa !important;
+    /* background-color: #aaa; */
+    background-color: transparent !important;
+    background: transparent !important;
+    border-color: transparent !important;
+    color: white !important;
     height: 60px;
+    position: absolute !important;
 }
 
 #app-navbar-name{
