@@ -1,3 +1,9 @@
+.social-page {
+    background-color: #9fc2ba !important;
+    width: 100%;
+    height: 100%;
+}
+
 .social-card:hover {
     transform: scale(1.05);
     -webkit-transform: scale(1.05);

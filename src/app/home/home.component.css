@@ -1,0 +1,18 @@
+.navbar {
+    background-color: transparent !important;
+    background: transparent !important;
+    border-color: transparent !important;
+    color: white !important;
+}
+
+.about-page {
+    height: 100%;
+    width: 100%;
+    background-color: #444;
+    color: white;
+}
+
+.page-heading {
+    text-align: center;
+    font-size: 15vw !important;
+}

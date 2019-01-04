@@ -25,6 +25,11 @@
     padding: 0em 1em;
     text-align: center;
 }
+
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link>span {
+  color: white;
+}
+
 .footer {
     position: fixed;
     left: 3%;
@@ -607,4 +612,13 @@ a {
 #scrollBtn:hover {
   transform: translateY(-1vh);
   transition-duration: 500ms;
+}
+
+@media (max-width: 1000px) {
+  .navbar-collapse {
+    background-color: #777 !important;
+    background: #777 !important;
+    border-color: #777 !important;
+    color: white !important;
+  }
 }
