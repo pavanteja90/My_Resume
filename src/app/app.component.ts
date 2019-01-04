@@ -124,9 +124,8 @@ export class AppComponent implements OnInit{
   }
 
   topFunction() {
-    document.getElementById("background").scrollTop = 0;
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+    $("#background").animate({scrollTop: '0px'}, 800);
+    $('html, body').animate({scrollTop: '0px'}, 800);
   }
 
   routingChanged(value) {
