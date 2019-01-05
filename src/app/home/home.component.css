@@ -6,22 +6,16 @@
 }
 
 #about-page-slide-1 {
-    height: 100vh;
-    width: 100%;
     background-color: brown;
     color: white;
 }
 
 #about-page-slide-2 {
-    height: 100vh;
-    width: 100%;
     background-color: #444;
     color: white;
 }
 
 #about-page-slide-3 {
-    height: 100vh;
-    width: 100%;
     background-color: blueviolet;
     color: white;
 }
