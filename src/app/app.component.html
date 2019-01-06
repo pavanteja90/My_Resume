@@ -2,8 +2,8 @@
 <button style="width: fit-content; height: fit-content" (click)="topFunction()" id="scrollBtn"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></button>
 <nav id="app-navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <a class="navbar-brand" href="#" (click)="navigate(5)"><i class="fa fa-home"></i>&nbsp;<span style="font-family: URW Chancery L, cursive">Pavan Teja</span></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-    aria-expanded="false" aria-label="Toggle navigation" (click)="navbarBtnClicked()">
+  <button id="toggle-btn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+    aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon" ></span>
   </button>
 
@@ -28,6 +28,13 @@
         <a class="nav-link" routerLink="social-presence" (click)="navigate(4)">
             <i class="fa fa-at" aria-hidden="true"></i>&nbsp;<span style="font-family: URW Chancery L, cursive">Social Presence</span>
           </a>
+      </li>
+    </ul>
+    <ul class="navbar-nav" style="float:right; margin: 0px">
+      <li class="nav-item" id="a5">
+        <a class="nav-link" href="https://drive.google.com/open?id=1E8hxWQ0jCmgB6Pr4OMmvGlSxqWGlja2-" target="_blank">
+          <span style="font-family: URW Chancery L, cursive">Resume </span>
+        </a>
       </li>
     </ul>
   </div>

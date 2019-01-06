@@ -1,6 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import '~font-awesome/css/font-awesome.min.css';
+@import './assets/fullpage.css';
 /* @import '~@fortawesome/fontawesome-free/css/fontawesome.min.css'; */
 /* @import '~font-awesome/fonts/fontawesome-webfont.woff';
 @import '~font-awesome/fonts/fontawesome-webfont.woff2'; */
+
+
+::-webkit-scrollbar {
+    width: 0px !important;
+    background: transparent !important; /* make scrollbar transparent */
+}

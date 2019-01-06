@@ -1,0 +1,42 @@
+.navbar {
+    background-color: transparent !important;
+    background: transparent !important;
+    border-color: transparent !important;
+    color: white !important;
+}
+
+#about-page-slide-1 {
+    background-color: brown;
+    color: white;
+}
+
+#about-page-slide-2 {
+    background-color: #444;
+    color: white;
+}
+
+#about-page-slide-3 {
+    color: white;
+}
+
+#about-page-slide-4 {
+    /* background-image: url("../../assets/images/mypics/mypic.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain; */
+    background-color: blueviolet;
+    color: white;
+}
+
+.page-heading {
+    text-align: center;
+    font-size: 15vw !important;
+}
+
+.sub-heading {
+    text-align: center;
+    margin: 0 20vw;
+}
+a {
+    text-decoration: none;
+}
