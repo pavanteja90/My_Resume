@@ -16,6 +16,14 @@
 }
 
 #about-page-slide-3 {
+    color: white;
+}
+
+#about-page-slide-4 {
+    /* background-image: url("../../assets/images/mypics/mypic.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain; */
     background-color: blueviolet;
     color: white;
 }

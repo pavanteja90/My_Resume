@@ -16,11 +16,11 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.myFullPage = fullPage('#about-page', {
-        sectionsColor: ['brown', '#444', '#1bbc9b', 'whitesmoke', '#ccddff'],
+        sectionsColor: ['brown', '#444', '#4BBFC3', '#1bbc9b'],
         lazyLoad: true,        
         navigation: true,
         navigationPosition: 'left',
-        navigationTooltips: ['Hell<del>o</del>', 'W<del>o</del>rk', 'Stay in t<del>o</del>uch']
+        navigationTooltips: ['Hell<del>o</del>.', 'W<del>o</del>rk.', 'G<del>o</del>al.', 'Stay in t<del>o</del>uch.']
     });
   }
 
